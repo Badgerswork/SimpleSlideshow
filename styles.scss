@@ -1,0 +1,18 @@
+.slideshow-container {
+    &__images {
+        position: relative;
+        min-height: 20rem;
+        img {
+            position: absolute;
+            top: 0;
+
+            &.slideshow{
+                opacity: 0;
+                transition: opacity 2s ease-in-out;
+            }
+            &.slideshow-visible {
+                opacity: 1;
+            }
+        }
+    }
+}
