@@ -26,8 +26,8 @@ function slideshow() {
         previous = i - 1;
       }
       current = i;
-      toggleClass(thisEl[current], "slideshow-visible");
-      toggleClass(thisEl[previous], "slideshow-visible");
+      toggleClass(thisEl[current], "slideshow--visible");
+      toggleClass(thisEl[previous], "slideshow--visible");
 
       i = (i + 1) % thisEl.length; // reset the counter
       console.log(i);
