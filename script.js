@@ -6,7 +6,7 @@ function toggleClass(elem, cls) {
 
 // Slideshow function
 // Required the class of slide show on each of the images
-function slideshow(staggerStart = false, duration = 5) { // Set defaults to no staggered start & 5s for each slide
+function slideshow(duration = 5, staggerStart = false) {
   let slideGroup = document.querySelectorAll(".slideshow-container");
   duration = (duration * 1000);
   for (let index = 0; index < slideGroup.length; ++index) {
@@ -40,7 +40,6 @@ function slideshow(staggerStart = false, duration = 5) { // Set defaults to no s
     }
 }
 document.addEventListener("DOMContentLoaded", function() {
-  //Pass in whether to stagger the start timings and the duration of pause (in secs) 
-  // on each slide (defults to false and 5 secs)
-  slideshow(true, 5);
+  //Pass in the duration of pause (in secs) on each slide (defults to false and 5 secs) and whether to stagger the start timings (defaults to false)
+  slideshow(5, true);
 });
