@@ -9,9 +9,9 @@ Take a look at the [codepen](https://codepen.io/badgerswork/pen/VRErmy)
 
 ```html
 <div class="slideshow-container">
-	<img src="http://www.fillmurray.com/640/360" class="slideshow slideshow-visible" />
-	<img src="https://loremflickr.com/640/360" class="slideshow" />
-	<img src="https://placebeard.it/640x360" class="slideshow" />
+    <img src="http://www.fillmurray.com/640/360" class="slideshow slideshow--visible" />
+    <img src="https://loremflickr.com/640/360" class="slideshow" />
+    <img src="https://placebeard.it/640x360" class="slideshow" />
 </div>
 ```
 
