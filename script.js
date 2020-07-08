@@ -5,16 +5,15 @@ function toggleClass(elem, cls) {
 }
 
 // Slideshow function
-// Required the class of slide show on each of the images
+// Requires the class of 'slideshow' on each of the images
 function slideshow(duration = 5, staggerStart = false) {
   let slideGroup = document.querySelectorAll(".slideshow-container");
   duration = (duration * 1000);
   for (let index = 0; index < slideGroup.length; ++index) {
     let thisEl = slideGroup[index].querySelectorAll(".slideshow-container .slideshow");
-    if (thisEl.length < 2){
-        return;
-    } else {
-        let startDelay = staggerStart ? parseInt(index + '000') : 0;
+    if (thisEl.length >= 2){
+
+		let startDelay = staggerStart ? parseInt(index + '000') : 0;
 
         setTimeout(function(){
             let i = 1;
